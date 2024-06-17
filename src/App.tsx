@@ -1,10 +1,9 @@
-const App = () => {
+import TodoList from './containers/TodoList/TodoList';
 
+const App = () => {
   return (
-    <>
-      Hello Attractor
-    </>
+    <TodoList/>
   )
 };
 
-export default App
+export default App;
