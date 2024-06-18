@@ -23,7 +23,7 @@ const MovieForm: React.FC<Props> = ({addMovie}) => {
                 placeholder='Enter name of your movie'
                 onChange={(e) => setMovieCard(e.target.value)}
                 required/>
-            <button type='submit'>Add</button>
+            <button className='success-btn' type='submit'>Add</button>
         </form>
     );
 };

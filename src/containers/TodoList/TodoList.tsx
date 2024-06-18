@@ -31,13 +31,15 @@ const TodoList = () => {
 
   return (
     <div className='container'>
-      <h1>Todolist App</h1>
-      <MovieForm addMovie={addMovie}/>
-      <MovieList
-        movies={movies}
-        removeMovie={removeMovie}
-        updateMovie={updateMovie}
-      />
+      <div className='todo-block'>
+        <h1>Todolist App</h1>
+        <MovieForm addMovie={addMovie}/>
+        <MovieList
+          movies={movies}
+          removeMovie={removeMovie}
+          updateMovie={updateMovie}
+        />
+      </div>
     </div>
   );
 };

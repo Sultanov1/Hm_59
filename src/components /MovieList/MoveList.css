@@ -5,3 +5,15 @@ ul {
 li {
   list-style: none;
 }
+
+.danger-btn {
+  font-size: 15px;
+  font-weight: bold;
+  color: red;
+  border: 2px solid red;
+}
+
+.danger-btn:hover {
+  background: red;
+  color: white;
+}

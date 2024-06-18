@@ -16,7 +16,7 @@ const MovieItem: React.FC<Props> = React.memo(({movie, updateMovie, removeMovie}
     return (
         <li>
             <input type="text" value={movie.title} onChange={handleChange}/>
-            <button onClick={() => removeMovie(movie.id)}>X</button>
+            <button className='danger-btn' onClick={() => removeMovie(movie.id)}>X</button>
         </li>
     );
 });

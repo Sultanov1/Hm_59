@@ -1,6 +1,7 @@
 import {Movie} from '../../types';
 import MovieItem from './MovieItem';
 import React from 'react';
+import './MoveList.css';
 
 interface Props {
   movies: Movie[];
@@ -20,6 +21,7 @@ const MovieList: React.FC<Props> = ({movies, removeMovie, updateMovie}) => {
         />
       ))}
     </ul>
-  )}
+  );
+};
 
-      export default MovieList;
+export default MovieList;
