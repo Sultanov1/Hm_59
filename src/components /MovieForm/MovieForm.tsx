@@ -1,8 +1,9 @@
 const MovieForm = () => {
   return (
-    <div>
-      MovieForm
-    </div>
+    <form>
+      <input type="text" placeholder='Enter name of Movie' required/>
+      <button type='submit'>Add</button>
+    </form>
   );
 };
 

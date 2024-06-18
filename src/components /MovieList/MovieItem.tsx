@@ -1,8 +1,16 @@
-const MovieItem = () => {
+import React from 'react';
+import {Movie} from '../../types';
+
+interface Props  {
+  movie: Movie;
+}
+
+const MovieItem: React.FC<Props> = ({movie}) => {
   return (
-    <div>
-      MoveItem
-    </div>
+    <li>
+      <input type="text" value={movie.title}/>
+      <button>X</button>
+    </li>
   );
 };
 
