@@ -4,15 +4,3 @@
   padding: 2rem;
   text-align: center;
 }
-
-.container {
-  display: flex;
-  flex-direction: column;
-}
-
-.todo-block {
-  width: max-content;
-  padding: 20px;
-  border: 1px solid black;
-  box-sizing: border-box;
-}

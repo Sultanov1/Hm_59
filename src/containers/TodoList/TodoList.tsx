@@ -30,7 +30,7 @@ const TodoList = () => {
 
 
   return (
-    <div className='container'>
+    <div className='item'>
       <div className='todo-block'>
         <h1>Todolist App</h1>
         <MovieForm addMovie={addMovie}/>
