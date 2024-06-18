@@ -4,16 +4,22 @@ import React from 'react';
 
 interface Props {
   movies: Movie[];
+  updateMovie: (id: string, newMovieName: string) => void;
+  removeMovie: (id: string) => void;
 }
 
-const MovieList: React.FC<Props> = ({movies}) => {
+const MovieList: React.FC<Props> = ({movies, removeMovie, updateMovie}) => {
   return (
     <ul>
       {movies.map((movies) => (
-        <MovieItem key={movies.id} movie={movies}/>
+        <MovieItem
+          key={movies.id}
+          movie={movies}
+          removeMovie={removeMovie}
+          updateMovie={updateMovie}
+        />
       ))}
     </ul>
-  );
-};
+  )}
 
-export default MovieList;
+      export default MovieList;
